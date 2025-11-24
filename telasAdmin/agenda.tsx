@@ -208,6 +208,7 @@ export default function T_agendamentosAdmin() {
   //  Interface
   // ------------------------------------------------------------------
   return (
+    <View style={{ flex:1}}>
     <ScrollView style={styles.scrollContainer}>
       <Text style={styles.title}>
         Painel do Administrador
@@ -326,8 +327,9 @@ export default function T_agendamentosAdmin() {
             )}
           />
         ))}
+    </ScrollView>
 
-      {/* Modal */}
+    {/* Modal */}
       {modalVisivel && itemSelecionado && (
         <View style={styles.modalBase}>
           <View style={styles.modal}>
@@ -435,6 +437,6 @@ export default function T_agendamentosAdmin() {
           </View>
         </View>
       )}
-    </ScrollView>
+    </View>
   );
 }
