@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ActivityIndicator, Alert, Button, ScrollView, TextInput } from "react-native";
 import { cadastrarUsuario } from "../CRUD/authFirebase";
-import style from "./S_login"; // pode reaproveitar o mesmo estilo
+import style from "./S_cadastro"; // pode reaproveitar o mesmo estilo
 
 export default function T_cadastro({ navigation }: any) {
   const [email, setEmail] = useState("");
